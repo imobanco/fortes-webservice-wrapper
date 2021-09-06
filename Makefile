@@ -8,7 +8,7 @@ config.env:
 	cp .env.sample .env
 
 test:
-	poetry run python -m unittest $(args)
+	python -m unittest $(args)
 
 fmt:
 	isort .
