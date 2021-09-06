@@ -1,6 +1,7 @@
-from .soap import BaseSoapWrapper
-from  ..models.base import TClient, TFornecedor
 from ..constants import WSDL_URL
+from ..models.base import TClient, TFornecedor
+from .soap import BaseSoapWrapper
+
 
 class FortesWrapper(BaseSoapWrapper):
 
@@ -12,7 +13,6 @@ class FortesWrapper(BaseSoapWrapper):
     #     mensagem_erro = data[mensagem_erro:]
     #
     #     return mensagem_retorno, mensagem_erro
-
 
     def _get_wsdl(self):
         return self.get_client(WSDL_URL)
@@ -28,7 +28,7 @@ class FortesWrapper(BaseSoapWrapper):
         return r
 
     def excluir_cliente(self, document):
-        r =self._get_wsdl().service.ExcluiClienteWithCNPJCPF(document)
+        r = self._get_wsdl().service.ExcluiClienteWithCNPJCPF(document)
         return r
 
     def excluir_fornecedor_com_json(self, fornecedor):

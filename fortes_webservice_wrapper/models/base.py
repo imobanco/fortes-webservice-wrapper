@@ -1,5 +1,6 @@
+from typing import Optional
+
 from pydantic import BaseModel, constr
-from typing import Literal, Optional, Union
 
 
 class TClient(BaseModel):
@@ -7,7 +8,7 @@ class TClient(BaseModel):
     codigo: constr(min_length=0, max_length=6)
     nome: constr(min_length=0, max_length=80)
     nomeFantasia: Optional[str]
-    cnpjcpf:  constr(min_length=11, max_length=14)
+    cnpjcpf: constr(min_length=11, max_length=14)
     cep: Optional[str]
     logradouro: Optional[str]
     bairro: Optional[str]

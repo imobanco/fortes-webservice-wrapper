@@ -16,7 +16,8 @@ setup(
         "fortes_webservice_wrapper",
         "fortes_webservice_wrapper.wrapper",
         "fortes_webservice_wrapper.models",
-    ],    classifiers=[
+    ],
+    classifiers=[
         "Programming Language :: Python :: 3",
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
