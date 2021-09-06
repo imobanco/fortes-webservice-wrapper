@@ -38,4 +38,4 @@ fornecedor = {
     "IPI": "",
 }
 
-r = FortesWrapper().excluir_fornecedor_com_json(fornecedor)
+r = FortesWrapper().excluir_fornecedor(fornecedor)
