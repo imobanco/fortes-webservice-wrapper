@@ -53,7 +53,7 @@ class TClient(BaseModel):
 class TFornecedor(BaseModel):
     Codigo: Optional[str]
     Nome: str
-    CNPJCPF:  constr(min_length=14, max_length=14)
+    CNPJCPF: constr(min_length=11, max_length=14)
     CEP: Optional[str]
     Logradouro: Optional[str]
     Bairro: Optional[str]
