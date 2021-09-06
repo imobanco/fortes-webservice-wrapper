@@ -21,15 +21,8 @@
       in
       {
 
-        poetryEnv = import ./mkPoetryEnv.nix.nix {
-          pkgs = nixpkgs.legacyPackages.${system};
-        };
-
-        env = pkgsAllowUnfree.poetry2nix.mkPoetryEnv config;
-
         devShell = pkgsAllowUnfree.mkShell {
           buildInputs = with pkgsAllowUnfree; [
-            #(pkgsAllowUnfree.poetry2nix.mkPoetryEnv config)
             gnumake
             poetry
             python3
