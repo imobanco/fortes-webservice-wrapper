@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 # Setting up
 setup(
     name="fortes_webservice_wrapper",
-    version=0.1,
+    version=0.0.1,
     author="Imobanco",
     description="Webservice de comunicação com o Fortes Financeiro",
     long_description=long_description,
