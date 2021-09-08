@@ -1,4 +1,5 @@
 from setuptools import setup
+import versioneer
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -6,7 +7,8 @@ with open("README.md", "r") as fh:
 # Setting up
 setup(
     name="fortes_webservice_wrapper",
-    version=0.1,
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     author="Imobanco",
     description="Webservice de comunicação com o Fortes Financeiro",
     long_description=long_description,
