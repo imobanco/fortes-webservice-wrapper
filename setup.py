@@ -1,4 +1,5 @@
 from setuptools import setup
+
 import versioneer
 
 with open("README.md", "r") as fh:
