@@ -1,0 +1,12 @@
+# Local development dependencies go here
+--requirement requirements.txt
+--requirement requirements-build.txt
+
+# Coverage
+# ------------------------------------------------
+coverage==5.0.*
+
+# CI
+# ------------------------------------------------
+black
+flake8
