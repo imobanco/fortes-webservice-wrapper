@@ -9,7 +9,6 @@ class BaseSoapWrapper:
             self.wsdl = WSDL_URL
         else:
             self.wsdl = wsdl_url
-        
 
     def get_client(self):
         return Client(self.wsdl)
