@@ -4,15 +4,6 @@ from .soap import BaseSoapWrapper
 
 class FortesWrapper(BaseSoapWrapper):
 
-    # def trata_retorno(self, data):
-    #     mensagem_retorno = data.find("Retorno")
-    #     mensagem_erro = data.find("Erro")
-    #
-    #     mensagem_retorno = data[mensagem_retorno:mensagem_erro]
-    #     mensagem_erro = data[mensagem_erro:]
-    #
-    #     return mensagem_retorno, mensagem_erro
-
     def incluir_cliente(self, cliente):
         data = TClient(**cliente)
         r = self.get_client().service.IncluirClienteComJSON(data.json())
