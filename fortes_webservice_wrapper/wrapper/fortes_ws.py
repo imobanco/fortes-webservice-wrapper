@@ -3,7 +3,6 @@ from .soap import BaseSoapWrapper
 
 
 class FortesWrapper(BaseSoapWrapper):
-
     def incluir_cliente(self, cliente):
         data = TClient(**cliente)
         r = self.get_client().service.IncluirClienteComJSON(data.json())
