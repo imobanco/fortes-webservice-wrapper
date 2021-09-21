@@ -5,6 +5,9 @@ from fortes_webservice_wrapper.models.base import TClient, TFornecedor
 
 class BaseModelsTestCase(TestCase):
     def test_cliente(self):
+        from fortes_webservice_wrapper.wrapper.fortes_ws import FortesWrapper
+        r = FortesWrapper().buscar_cliente("01695572432")
+
         data = {
             "codigo": "",
             "nome": "Ana do Imobanco",
